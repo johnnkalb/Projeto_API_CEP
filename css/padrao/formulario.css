@@ -1,0 +1,55 @@
+.container__formulario{
+    display: flex;
+    justify-content: center;
+    margin: 0.5em 4em 0px 4em;
+}
+.form-group{
+    display: flex;
+    flex-direction: column;
+    margin: 1em;
+}
+.form-control{
+    color: red;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+.subtitulo__resultado{
+    font-size: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .formulario__pesquisa{
+    margin: 15% 36.5%;
+}
+.input__text{
+    padding: 0.5em;
+    font-size: 1.5vw;
+    width: 50%;
+    border-radius: 5px;
+    border: 0.1px solid;
+} */
+/* .input__text::placeholder{
+} */
+/* .input__submit{
+    border: 0;
+    background: #294cf5;
+    color: white;
+        padding: 0.8em;
+    border-radius: 0.5em;
+}
+.input__submit:hover{
+    background-color: #182c94;
+    cursor: pointer;
+} */
