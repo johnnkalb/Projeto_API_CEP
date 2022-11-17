@@ -26,6 +26,6 @@ cep.addEventListener('blur', (e)=>{ //blur serve para quando perder o foco Já e
         .then(data=>showData(data), errorSpan.innerHTML='')
         .catch((e=> errorSpan.innerHTML = "Deu ERRO"))
     })
-    .catch((e=> errorSpan.innerHTML = "Erro na Sitaxe"))
+    .catch((e=> errorSpan.innerHTML = "(Erro na Sitaxe)"))
     // console.log(cep.value)
 })
