@@ -6,9 +6,13 @@ const errorSpan = document.querySelector('.error')
 
 const showData = (result)=>{
     for(const campo in result){
+     if(campo = true){
+        // errorSpan.innerHTML='Olá'
+     }else{
         if(document.querySelector("#"+campo))
         document.querySelector("#"+campo).value = result[campo]
         // console.log(campo)
+     }
     }
 }
 
@@ -24,7 +28,7 @@ cep.addEventListener('blur', (e)=>{ //blur serve para quando perder o foco Já e
     fetch(`https://viacep.com.br/ws/${search}/json/`, options)
     .then((response)=>{response.json()
         .then(data=>showData(data), errorSpan.innerHTML='')
-        .catch((e=> errorSpan.innerHTML = "Deu ERRO"))
+        .catch((e=> errorSpan.innerHTML = "CEP INCORRETO!"))
     })
     .catch((e=> errorSpan.innerHTML = "Erro na Sitaxe"))
     // console.log(cep.value)
