@@ -23,8 +23,8 @@ cep.addEventListener('blur', (e)=>{ //blur serve para quando perder o foco Já e
 
     fetch(`https://viacep.com.br/ws/${search}/json/`, options)
     .then((response)=>{response.json()
-        .then(data=>showData(data))
-        // .catch((e=> errorSpan.innerHTML = "Deu ERRO"))
+        .then(data=>showData(data), errorSpan.innerHTML='')
+        .catch((e=> errorSpan.innerHTML = "Deu ERRO"))
     })
     .catch((e=> errorSpan.innerHTML = "Erro na Sitaxe"))
     // console.log(cep.value)
