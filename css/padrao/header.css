@@ -1,4 +1,7 @@
 .titulo__principal{
-    margin: 1em;
+    margin: 0.5em 0 0.5em;
     font-size: 2em;
+}
+header:hover{
+    cursor: pointer;
 }
