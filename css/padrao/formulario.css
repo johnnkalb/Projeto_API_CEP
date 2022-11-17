@@ -17,9 +17,15 @@
 }
 .subtitulo__resultado{
     font-size: 20px;
+    margin: 0 0 0.1em 0;
 }
-
-
+.formulario__container{
+    border: 1px solid;
+    border-radius: 4px;
+}
+.error{
+    color: red;
+}
 
 
 
