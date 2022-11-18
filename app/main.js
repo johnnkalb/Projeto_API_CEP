@@ -4,6 +4,7 @@ const pesquisa = document.querySelector('#pesquisa')
 const inserirDado = document.querySelector('.container__resultado')
 const errorSpan = document.querySelector('.error')
 const inputs = document.querySelector('.form-control')
+const formulario = document.querySelector('.container__form')
 
 const showData = (result)=>{
     for(const campo in result){
@@ -27,6 +28,6 @@ cep.addEventListener('blur', (e)=>{ //blur serve para quando perder o foco Já e
         .then(data=>showData(data), errorSpan.innerHTML='')
         .catch((e=> errorSpan.innerHTML = "Deu ERRO"))
     })
-    .catch((e=> errorSpan.innerHTML = "(Erro na Sitaxe)"), inputs.textContent = `AA`)
+    .catch((e=> errorSpan.innerHTML = "(Insira Um CEP Válido)"), formulario.reset())
     // console.log(cep.value)
 })
