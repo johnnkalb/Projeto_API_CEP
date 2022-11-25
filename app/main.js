@@ -26,7 +26,7 @@ cep.addEventListener('blur', (e)=>{ //blur serve para quando perder o foco Já e
     fetch(`https://viacep.com.br/ws/${search}/json/`, options)
     .then((response)=>{response.json()
         .then(data=>showData(data), errorSpan.innerHTML='')
-        .catch((e=> errorSpan.innerHTML = "Deu ERRO"))
+        .catch((e=> console.log('error')))
     })
     .catch((e=> errorSpan.innerHTML = "(Insira Um CEP Válido)"), formulario.reset())
     // console.log(cep.value)

@@ -15,3 +15,12 @@ header{
     border: 1px solid;
     box-shadow: 0px 1px 10px 0px;
 }
+
+footer{
+    display: flex;
+    justify-content: center;
+    margin: 1em;
+}
+.texto__footer{
+    font-size: 12px;
+    }
